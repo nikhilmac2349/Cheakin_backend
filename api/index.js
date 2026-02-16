@@ -17,10 +17,10 @@ mongoose.connect(process.env.MONGO_URI)
   .then(() => console.log("DB Connected"))
   .catch(err => console.log(err));
 
-app.use("/professure", require("./routes/userRoutes"));
-app.use("/student" , require("./routes/studnetRoutes"))
-app.use("/actualcheakin" , require("./routes/actualCheakin"))
-app.use("/plannedcheakin" , require("./routes/plannedCheakin"))
+app.use("/professure", require("../routes/userRoutes"));
+app.use("/student" , require("../routes/studnetRoutes"))
+app.use("/actualcheakin" , require("../routes/actualCheakin"))
+app.use("/plannedcheakin" , require("../routes/plannedCheakin"))
 
 
 
